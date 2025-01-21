@@ -1,0 +1,64 @@
+@import "../../../utils/colors";
+
+.uploader {
+  height: 300px;
+  width: 300px;
+  position: fixed;
+  background-color: @background-dark;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-y: auto;
+  border: 1px solid @border-dark;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: @font-color-dark;
+    font-size: 1.2rem;
+  }
+
+  &__close {
+    padding: 3px;
+    color: @font-color-dark;
+    cursor: pointer;
+  }
+}
+
+.upload-file {
+  background-color: @input-background-dark;
+  border-radius: 8px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  color: @font-color-dark;
+  border: 1px solid @border-dark;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__progress-bar {
+    height: 1rem;
+    border-radius: 8px;
+    background-color: @input-background-dark;
+    display: flex;
+    margin: 3px 0;
+    border: 1px solid @border-dark;
+  }
+
+  &__upload-bar {
+    background-color: #4CAF50;
+    border-radius: 8px;
+  }
+
+  &__percent {
+    color: @font-color-dark;
+    left: 50%;
+    position: absolute;
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "serverPort": 5000,
+  "dbUrl": "mongodb://mongo:27017/mydatabase",
+  "secretKey": "KQWEFBV12891GV1I2M31289F71238FH012N43412",
+  "filePath": "./uploads",
+  "staticPath": "./uploads"
+}

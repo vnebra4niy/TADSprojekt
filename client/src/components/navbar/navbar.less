@@ -1,0 +1,46 @@
+@import "../../utils/colors";
+
+.navbar {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  background-color: @navbar-background-dark;
+  width: 100%;
+
+  &__header {
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: @font-color-dark;
+  }
+
+  &__login {
+    margin-left: auto;
+    margin-right: 20px;
+    cursor: pointer;
+    color: @font-color-dark;
+  }
+
+  &__search {
+    width: 200px;
+    margin-left: 30px;
+    background-color: @input-background-dark;
+    color: @font-color-dark;
+    border: 1px solid @border-dark;
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid @border-dark;
+  }
+}
+
+.container {
+  width: 1140px;
+  display: flex;
+  align-items: center;
+}

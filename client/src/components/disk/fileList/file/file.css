@@ -1,0 +1,127 @@
+.file {
+  margin: 10px 0;
+  border-bottom: solid 2px #444;
+  display: grid;
+  grid-template-columns: 1fr 4fr repeat(4, 1fr);
+  align-items: center;
+  color: #E0E0E0;
+}
+
+.file:hover {
+  transform: scale(1.02);
+}
+
+.file__img {
+  justify-self: center;
+}
+
+.file__date {
+  grid-column-start: 5;
+  justify-self: center;
+}
+
+.file__size {
+  grid-column-start: 6;
+  justify-self: center;
+}
+
+.file__btn.file__download {
+  background-color: #444;
+  color: #E0E0E0;
+  border: 1px solid #666;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.file__btn.file__download:hover {
+  background-color: #FF6347;
+  color: #FFFFFF;
+}
+
+.file-plate__btn.file-plate__download {
+  background-color: #444;
+  color: #E0E0E0;
+  border: 1px solid #666;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.file-plate__btn.file-plate__delete {
+  background-color: #444;
+  color: #E0E0E0;
+  border: 1px solid #666;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.file-plate__btn.file-plate__delete:hover {
+  background-color: #FF6347;
+  color: #FFFFFF;
+}
+
+
+.file-plate__btn.file-plate__download:hover {
+  background-color: #4dff47; 
+  color: #FFFFFF;
+}
+
+
+.file__btn {
+  display: none;
+}
+
+.file:hover .file__date {
+  grid-column-start: 3;
+}
+
+.file:hover .file__size {
+  grid-column-start: 4;
+}
+
+.file:hover .file__download {
+  grid-column-start: 5;
+  display: block;
+}
+
+.file:hover .file__delete {
+  grid-column-start: 6;
+  display: block;
+}
+
+.file-plate {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1E1E1E;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.file-plate__img {
+  height: 100px;
+  width: 100px;
+  filter: brightness(0.8);
+}
+
+.file-plate__btns {
+  display: none;
+}
+
+.file-plate:hover .file-plate__btns {
+  display: flex;
+}

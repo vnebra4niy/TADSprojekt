@@ -1,0 +1,239 @@
+.disk {
+  margin-top: 20px;
+}
+
+.disk__btns {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.disk__create {
+  margin-left: 10px;
+  background-color: #333;
+  color: #E0E0E0;
+  border: 1px solid #444;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.disk__back {
+  background-color: #444;
+  color: #E0E0E0;
+  border: 1px solid #666;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.disk__back:hover {
+  background-color: #666;
+  color: #FFFFFF;
+}
+
+.disk__create:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.disk__upload-input {
+  display: none;
+}
+
+.disk__upload-label {
+  border: 2px dashed #888888;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: #2A2A2A;
+  color: #E0E0E0;
+  border-radius: 8px;
+}
+
+.disk__upload-label:hover {
+  background-color: #444;
+  border-color: #E0E0E0;
+}
+
+.disk__select {
+  margin-left: auto;
+  background-color: #333;
+  color: #E0E0E0;
+  border: 1px solid #444;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.disk__list,
+.disk__plate {
+  height: 20px;
+  width: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: no-repeat center center;
+  background-size: contain;
+  margin: 0 10px;
+}
+
+.disk__list {
+  background-image: url("../../assets/img/list.svg");
+}
+
+.disk__plate {
+  background-image: url("../../assets/img/plate.svg");
+}
+
+.drop-area {
+  width: 100%;
+  height: calc(100vh - 50px - 40px);
+  margin: 20px;
+  border: dashed #444 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  background-color: #121212;
+  color: #E0E0E0;
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup__close {
+  background-color: transparent;
+  border: none;
+  color: #E0E0E0;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.uploader__close {
+  background-color: transparent;
+  color: #E0E0E0;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  transition: color 0.3s ease;
+}
+
+.upload-file__remove {
+  background-color: transparent;
+  color: #E0E0E0;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  transition: color 0.3s ease;
+}
+
+.upload-file__remove:hover {
+  color: #FF6347;
+}
+
+
+.popup__content {
+  width: 400px;
+  background: #1E1E1E;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  color: #E0E0E0;
+}
+
+.popup__create {
+  background-color: transparent;
+  border: 2px solid #4CAF50;
+  color: #4CAF50;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.popup__create:hover {
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  border-color: #45a049;
+}
+
+.file__btn.file__delete {
+  background-color: #444;
+  color: #E0E0E0;
+  border: 1px solid #666;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.file__btn.file__delete:hover {
+  background-color: #FF6347;
+  color: #FFFFFF;
+}
+
+.popup__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup input {
+  margin: 20px 0;
+  background: #333;
+  color: #E0E0E0;
+  border: 1px solid #444;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 50px);
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #888888;
+  border-color: #888888 transparent #888888 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../utils/colors";
+
+
+.authorization {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+  background-color: @background-dark-secondary;
+  border-radius: 20px;
+  padding: 30px;
+  align-self: center;
+  margin-top: 100px;
+  color: @font-color-dark;
+
+  &__header {
+    font-size: 30px;
+    font-weight: 700;
+    color: @font-color-dark;
+  }
+
+  input {
+    margin: 10px 20px;
+    background-color: @input-background-dark;
+    color: @font-color-dark;
+    border: 1px solid @border-dark;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  &__btn {
+    border: none;
+    background-color: @button-green;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    padding: 5px 10px;
+    align-self: flex-end;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: @button-green-hover;
+    }
+  }
+}
